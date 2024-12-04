@@ -18,34 +18,30 @@
         width: 100%;
       }
       
-      #header {
-        background: "Website Banner.jpg";
-      }
-      
       #navbar ul {
+        position: fixed;
         list-style-type: none;
         padding: 0px;
         margin: 0px;
         overflow: hidden;
+        width: 100%;
       }
       
       #navbar li {
-        float: right;
         display: inline;
-        
-      }
-      
-      #navbar li:hover {
-        background-color: #f7f7f7f7;
       }
       
       #navbar li a {
+        float: right;
         display: block;
         padding: 10px;
         color: black;
         text-decoration-line: none;
       }
       
+      #navbar li a:hover {
+        background-color: #f7f7f7f7;
+      }
     </style>
   </head>
   <body>
@@ -57,6 +53,9 @@
           <li><a href="#">Academic Works</a></li>
           <li><a href="#">About Me</a></li>
         </ul>
+      </div>
+      <div id="header">
+        <img src="Website Banner.jpg" alt="Website Banner Splash of Cartoon Oranges">
       </div>
     </div>
   </body>
