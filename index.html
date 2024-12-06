@@ -41,11 +41,21 @@
         color: white;
       }
       
-      .contentBlock {
+      .largeSelect {
         background-color: white;
-/*         width: 100%; */
         padding: 20px;
-        
+      }
+      
+      .largeSelect ul {
+        list-style-type: none;
+        padding: 0px;
+        overflow: hidden;
+      }
+      
+      .largeSelect ul  li {
+        display: inline;
+        float: left;
+        font-weight: bold;
       }
       
       #navbar {
@@ -66,7 +76,7 @@
       }
       
       #navbar ul li a:hover {
-        color: #555555;
+        color: #777777;
       }
       
       #header {
@@ -112,25 +122,24 @@
         <h1>Alexander <br> Hernandez Pineda</h1>
       </div>
       
-      <div class="contentBlock">
+      <div class="largeSelect">
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">ACADEMIC WORKS</a></li>
+          <li><a href="#">PERSONAL WORKS</a></li>
         </ul>
       </div>
-      
     </div>
     
     
     
     
     <script>
-      let lastScrollY = 50;
+      let topScrollY = 50;
       let navbar = document.getElementById("navbar");
       window.addEventListener("scroll", function (){
         let scrollY = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollY > lastScrollY){
+        if (scrollY > topScrollY){
           navbar.classList.add('navbarExtra');
         } else {
           navbar.classList.remove('navbarExtra');
