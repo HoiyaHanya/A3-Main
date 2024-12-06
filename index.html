@@ -19,12 +19,26 @@
        display: block; 
       }
       
-      
       .wrapper {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+      }
+      
+      .navbarExtra {
+        background-color: #00fff0;
+      }
+      
+      .navbarExtra ul li a {
+        color: #fff;
+      }
+      
+      .contentBlock {
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        
       }
       
       #navbar {
@@ -39,19 +53,19 @@
         overflow: hidden;
       }
       
-      #navbar li {
+      #navbar ul li {
         display: inline;
         float: right;
       }
       
-      #navbar li a {
+      #navbar ul li a {
         display: block;
         padding: 10px;
         color: black;
         text-decoration-line: none;
       }
       
-      #navbar li a:hover {
+      #navbar ul li a:hover {
         color: #555555;
       }
       
@@ -70,12 +84,7 @@
         text-align: center;
       }
       
-      .contentBlock {
-        background-color: white;
-        width: 100%;
-        padding: 20px;
-        
-      }
+      
       
       
     </style>
@@ -116,14 +125,15 @@
     
     
     <script>
-      let lastScrollTop = 0;
-      navbar = document.getElementById("navbar");
+      let lastScrollY = 0;
+      let navbar = document.getElementById("navbar");
       window.addEventListener("scroll", function (){
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-          navbar.classList.add();
-          
-        }  
+        let scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollY > lastScrollY){
+          navbar.classList.add('navbarExtra');
+        } else {
+          navbar.classList.remove('navbarExtra');
+        }
       } 
     )
     </script>
