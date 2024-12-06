@@ -20,9 +20,11 @@
         text-decoration-line: none;
       }
       
+      .contentBlockWide,
+      .largeSelect,
       #header,
       #footer {
-       display: block; 
+        display: block; 
       }
       
       .wrapper {
@@ -30,6 +32,8 @@
         top: 0;
         left: 0;
         width: 100%;
+        margin: 0px;
+        padding: 0px;
       }
       
       .navbarExtra {
@@ -43,6 +47,7 @@
       .largeSelect {
         background-color: white;
         padding: 0px 100px 30px 100px;
+        margin: 0px;
       }
       
       .largeSelect ul {
@@ -53,7 +58,6 @@
       
       .largeSelect ul li {
         display: inline;
-/*         float: left; */
         font-weight: bold; 
         padding: 0px;
       }
@@ -65,8 +69,16 @@
       }
       
       .contentBlockWide {
+        position: relative;
+        width: 100%;
+        margin: -1em;
         background-color: white;
         font-weight: bold;
+        justify-content: center;
+      }
+      
+      .contentBlockWide figcaption {
+        text-align: center;
       }
       
       #navbar {
@@ -144,6 +156,9 @@
         <figure>
           <img src="image_2024-12-06_145132369.png" alt="Drawing of Kirby with Painti" style="width:300;height:300">
           <figcaption>Painti - Painting Engine</figcaption>
+        </figure>
+        <figure>
+          <img src="filename.jpg" alt="description of image">
         </figure>
       </div>
     </div>
