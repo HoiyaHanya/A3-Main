@@ -13,6 +13,13 @@
         font-family: "Lato";
       }
       
+      ul li a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration-line: none;
+      }
+      
       #header,
       .contentBlock,
       #footer {
@@ -56,13 +63,6 @@
       #navbar ul li {
         display: inline;
         float: right;
-      }
-      
-      #navbar ul li a {
-        display: block;
-        padding: 10px;
-        color: black;
-        text-decoration-line: none;
       }
       
       #navbar ul li a:hover {
@@ -126,7 +126,7 @@
     
     
     <script>
-      let lastScrollY = 0;
+      let lastScrollY = 50;
       let navbar = document.getElementById("navbar");
       window.addEventListener("scroll", function (){
         let scrollY = window.pageYOffset || document.documentElement.scrollTop;
