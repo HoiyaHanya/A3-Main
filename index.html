@@ -21,7 +21,7 @@
       }
       
       #header,
-      .contentBlock,
+      .largeSelect,
       #footer {
        display: block; 
       }
@@ -43,20 +43,25 @@
       
       .largeSelect {
         background-color: white;
-        padding: 20px;
+        padding: 10px 0px;
       }
       
       .largeSelect ul {
         list-style-type: none;
-        padding: 0px;
         overflow: hidden;
       }
       
-      .largeSelect ul  li {
-        display: inline;
-        float: left;
-        font-weight: bold;
+      .largeSelect ul li {
+        display: block;
+/*         float: left; */
+        font-weight: bold; 
+        justify-content: space-between;
       }
+      
+      .largeSelect ul li a {
+        text-align: center;
+      }
+      
       
       #navbar {
         position: fixed;
