@@ -91,6 +91,10 @@
         border-bottom: 2px lightgray solid; 
       }
       
+      .largeSelect ul li a:hover {
+        text-decoration: underline;
+      }
+      
       .contentBlockWide {
         display: flex;
         margin: -1em 0px;;
@@ -113,35 +117,24 @@
         padding: 20px;
       }
       
-      .column1, .column2 {
-/*         padding: 0px 20px; */
-      }
-      
       .contentBlockImg {
         display: flex;
         background-color: white;
-/*         justify-content: center; */
         padding: 10px 60px;
       }
       
       .contentBlockImg .column1 {
         width: 45%;
-/*         margin: 0px; */
         text-align: center;
-/*         border: 2px black solid; */
       }
       
       .contentBlockImg .column1 figure {
-/*         border: 2px black solid; */
         width: 100%;
         margin: 50px auto;
       }
       
       .contentBlockImg .column1 figure img {
         width: 85%;
-/*         margin: auto; */
-/*         border: 2px black solid; */
-        
       }
       
       .contentBlockImg .column2 {
@@ -169,14 +162,14 @@
         padding: 20px 0px;
       }
       
-      .contentBlockText .column2 figure {
-        
-      }
-      
       .contentBlockText .column2 figure img {
         clip-path: circle(100%);
         border-radius: 50%;
         border: 3px gray solid;
+      }
+      
+      .contentBlockText .column2 figure img:hover {
+        border: 3px gray dashed;
       }
       
       #navbar {
@@ -246,7 +239,7 @@
           
           <li><a href="#">Personal Works</a></li>
           <li><a href="#">Academic Works</a></li>
-          <li><a href="#">About Me</a></li>
+          <li><a href="hoiyahanya.github.io/A3-About-Me/">About Me</a></li>
           <li ><a href="#" style="font-weight:bold">Home</a></li>
         </ul>
       </div>
@@ -257,7 +250,7 @@
       
       <div class="largeSelect">
         <ul>
-          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="hoiyahanya.github.io/A3-About-Me/">ABOUT ME</a></li>
           <li><a href="#">ACADEMIC WORKS</a></li>
           <li><a href="#">PERSONAL WORKS</a></li>
         </ul>
